@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <style>
+        /* CSS int?gr? */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #e8491d;
+            padding: 15px 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #e8491d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur marshall </h1>
+        <p>Un site web moderne et responsive</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#apropos">? propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="accueil">
+            <h2>Section Accueil</h2>
+            <p>Bienvenue sur notre site web. D?couvrez nos services et produits de qualit?.</p>
+            <a href="#services" class="btn">Voir nos services</a>
+        </section>
+
+        <section id="services">
+            <h2>Nos Services</h2>
+            <div>
+                <h3>Service 1</h3>
+                <p>Description du premier service que nous offrons.</p>
+            </div>
+            <div>
+                <h3>Service 2</h3>
+                <p>Description du deuxi?me service que nous offrons.
+                nous vendons des cours en ligne </p>
+            </div>
+        </section>
+
+        <section id="apropos">
+            <h2>? propos de nous</h2>
+            <p>Nous sommes une entreprise passionn?e par ce que nous faisons.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form>
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2025 Mon Site Web. Tous droits r?serv?s.</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Exemple de script simple
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Page charg?e !');
+            
+            // Animation simple pour les boutons
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('mouseover', () => {
+                    button.style.opacity = '0.8';
+                });
+                button.addEventListener('mouseout', () => {
+                    button.style.opacity = '1';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
